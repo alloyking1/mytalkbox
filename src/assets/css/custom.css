@@ -1,0 +1,28 @@
+/* nav */
+.nav_custom{
+    position: fixed;
+    background-color:#1c349f66;;
+}
+
+.container_sub{
+    height: 25rem;
+    text-align: center;
+}
+
+.container_sub_head{
+    font-size: 9.5rem;
+    padding-top: 5rem;
+    color: #697593;
+    text-shadow: 3px 7px 6px #0f155d;
+}
+
+.o_color{
+    color: yello;
+}
+
+/* index custom section style */
+.bg_section{
+    padding-top: 10.5rem;
+    padding-bottom: 7.5rem;
+    text-align: center;
+}
