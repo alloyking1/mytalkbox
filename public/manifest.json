@@ -1,0 +1,15 @@
+{
+    "name": "Talkbox",
+    "short_name": "Talkbox",
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#0476F2",
+    "background_color": "#fff",
+    "icons": [
+      {
+        "src": "icon_talkbox.png", 
+        "sizes": "136px * 154px", 
+        "type": "image/png" 
+      }
+    ]
+}

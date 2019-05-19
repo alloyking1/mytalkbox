@@ -3,11 +3,13 @@ import App from './App.vue'
 import router from './route/routes'
 
 Vue.config.productionTip = false
-
-// require global styles sheets
-require('./assets/css/argon.min.css')
-require('./assets/css/custom.css')
-require('./assets/img/brand/favicon.png')
+const prod = process.env.NODE_ENV === 'production'
+const shouldSW = 'serviceWorker' in navigator && prod
+if (shouldSW) {
+  navigator.serviceWorker.register('/service-worker.js').then(() => {
+    console.log("Service Worker Registered!")
+  })
+}
 
 new Vue({
   router,

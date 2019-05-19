@@ -4,12 +4,17 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "start": "node server.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "app": "^0.1.0",
     "axios": "^0.18.0",
+    "express": "^4.17.0",
+    "progressive": "^0.1.0",
     "soundcloud": "^3.3.2",
+    "support": "^1.1.4",
     "vue": "^2.6.6",
     "vue-router": "^3.0.2"
   },
@@ -20,6 +25,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "sw-precache-webpack-plugin": "^0.11.5",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
