@@ -17,7 +17,10 @@
                             <p>We bring you the best gener of music at the best times</p>
                             
                             <a href="#" class="btn btn-block btn-white btn-icon mb-3 mb-sm-0">
-                                <audio src="http://localhost:8000/stream.ogg" autoplay="true" controls="true" volume="1.0"></audio>
+                                <!-- <audio src="http://localhost:8000/stream.ogg" autoplay="true" controls="true" volume="1.0"></audio> -->
+                                <!-- <audio src="http://cast2.servcast.net:2199/system/streaminfo.js" autoplay="true" controls="true" volume="1.0"></audio> -->
+                                <!-- <audio controls autoplay="autoplay"><source src="http://162.244.80.118:9488/stream" type="audio/mp3"></audio> -->
+                                <audio controls autoplay="autoplay"><source src="http://66.85.88.174:80/hot108" type="audio/mp3"></audio>
                             </a>
                         </div>
                         <br>
