@@ -182,11 +182,10 @@
         </div>
       </div>
 
-      <div>
-        <!-- chart iFrame -->
+      <!-- <div>
         <iframe src="https://minnit.chat/mytalkbox?embed&nickname=" style="border:none;width:90%;height:500px;" allowTransparency="true">
           </iframe><br><a href="https://minnit.chat/mytalkbox" target="_blank">HTML5 Chatroom powered by Minnit Chat</a>
-      </div>
+      </div> -->
     </section>
   </main>
   </div>
