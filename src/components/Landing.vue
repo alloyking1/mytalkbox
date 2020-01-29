@@ -115,14 +115,14 @@
           </div>
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="px-4">
-              <img src="assets/img/theme/team-2-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+              <img src="../assets/img/theme/moses.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
               <div class="pt-4 text-center">
                 <h5 class="title">
                   <span class="d-block mb-1">Moses</span>
-                  <small class="h6 text-muted">...</small>
+                  <small class="h6 text-muted">Founder/CEO</small>
                 </h5>
                 <div class="mt-3">
-                  <a href="#" class="btn btn-primary btn-icon-only rounded-circle">
+                  <a href="https://twitter.com/@alloymoses" target="_blank" class="btn btn-primary btn-icon-only rounded-circle">
                     <i class="fa fa-twitter"></i>
                   </a>
                   <a href="#" class="btn btn-primary btn-icon-only rounded-circle">
@@ -137,11 +137,11 @@
           </div>
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="px-4">
-              <img src="assets/img/theme/team-3-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+              <img src="../assets/img/theme/moses.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
               <div class="pt-4 text-center">
                 <h5 class="title">
-                  <span class="d-block mb-1">Kindness</span>
-                  <small class="h6 text-muted">...</small>
+                  <span class="d-block mb-1">Moses</span>
+                  <small class="h6 text-muted">Lead developer</small>
                 </h5>
                 <div class="mt-3">
                   <a href="#" class="btn btn-info btn-icon-only rounded-circle">
@@ -180,6 +180,12 @@
             </div> -->
           </div>
         </div>
+      </div>
+
+      <div>
+        <!-- chart iFrame -->
+        <iframe src="https://minnit.chat/mytalkbox?embed&nickname=" style="border:none;width:90%;height:500px;" allowTransparency="true">
+          </iframe><br><a href="https://minnit.chat/mytalkbox" target="_blank">HTML5 Chatroom powered by Minnit Chat</a>
       </div>
     </section>
   </main>
