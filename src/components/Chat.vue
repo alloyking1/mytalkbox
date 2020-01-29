@@ -1,22 +1,20 @@
 <template>
     <div>
         <div>
-      
             <button class="open-button btn btn-default" @click="openForm()">
-                <!-- <i class="fa fa-comment-dots"></i> -->
-                <i class="fa fa-twitter"></i>
+                <i class="fa fa-comment-dots"></i>
             </button>
             <div class="chat-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                <h1>Chat</h1>
-
-                <!-- chart iFrame -->
-                <iframe src="https://minnit.chat/mytalkbox?embed&nickname=" style="border:none;width:90%;height:500px;" allowTransparency="true">
-                </iframe>
-                
-                <button type="button" class="btn cancel" @click="closeForm()">Close</button>
-                <button type="submit" class="btn">Send</button>
-                </form>
+                <div class="form-container">
+                    <h1>Chat</h1>
+                    <!-- chart iFrame -->
+                    <iframe src="https://minnit.chat/mytalkbox?embed&nickname=" style="border:none;width:90%;height:500px;" allowTransparency="true">
+                    </iframe>
+                    
+                    <button type="button" class="btn cancel" @click="closeForm()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
 
                 
             </div>
@@ -46,12 +44,11 @@ export default {
 <style scoped>
     /* Button used to open the chat form - fixed at the bottom of the page */
     .open-button {
-    /* background-color: #555; */
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    /* opacity: 0.8; */
+    opacity: 0.8;
     position: fixed;
     bottom: 23px;
     right: 28px;
@@ -66,8 +63,10 @@ export default {
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    /* border: 3px solid #f1f1f1; */
     z-index: 9;
+    border-radius: 12px;
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, 0.05) !important;
     }
 
     /* Add styles to the form container */
@@ -108,7 +107,16 @@ export default {
 
     /* Add a red background color to the cancel button */
     .form-container .cancel {
-    background-color: red;
+    border-radius: 50%;
+    border: .0625rem solid rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+    background-color: #79022b;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    left: 95px;
+    width: 20%;
     }
 
     /* Add some hover effects to buttons */
