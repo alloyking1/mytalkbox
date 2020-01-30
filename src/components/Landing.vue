@@ -15,7 +15,8 @@
               </p>
 
               <div>
-                <router-link to="/radio" class="btn btn-default">Radio</router-link>
+                <!-- <router-link to="/radio" class="btn btn-default">Radio</router-link> -->
+                <button class="btn btn-default" @click="openForm">Radio</button>
                 <router-link to="/podcast" class="btn btn-default">Podcast</router-link>
               </div>
             </div>
@@ -113,29 +114,29 @@
               </div>
             </div> -->
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="col-md-12 col-lg-12 mb-12 mb-lg-0">
             <div class="px-4">
               <img src="../assets/img/theme/moses.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
               <div class="pt-4 text-center">
                 <h5 class="title">
                   <span class="d-block mb-1">Moses</span>
-                  <small class="h6 text-muted">Founder/CEO</small>
+                  <small class="h6 text-muted">...</small>
                 </h5>
                 <div class="mt-3">
                   <a href="https://twitter.com/@alloymoses" target="_blank" class="btn btn-primary btn-icon-only rounded-circle">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fab fa-twitter"></i>
                   </a>
                   <a href="#" class="btn btn-primary btn-icon-only rounded-circle">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-facebook"></i>
                   </a>
                   <a href="#" class="btn btn-primary btn-icon-only rounded-circle">
-                    <i class="fa fa-dribbble"></i>
+                    <i class="fab fa-dribbble"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <!-- <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="px-4">
               <img src="../assets/img/theme/moses.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
               <div class="pt-4 text-center">
@@ -145,18 +146,18 @@
                 </h5>
                 <div class="mt-3">
                   <a href="#" class="btn btn-info btn-icon-only rounded-circle">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fab fa-twitter"></i>
                   </a>
                   <a href="#" class="btn btn-info btn-icon-only rounded-circle">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-facebook"></i>
                   </a>
                   <a href="#" class="btn btn-info btn-icon-only rounded-circle">
-                    <i class="fa fa-dribbble"></i>
+                    <i class="fab fa-dribbble"></i>
                   </a>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <!-- <div class="px-4">
               <img src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
@@ -193,7 +194,16 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+
+  methods:{
+    openForm() {
+      document.getElementById("myForm2").style.display = "block";
+    },
+
+    closeForm() {
+      document.getElementById("myForm2").style.display = "none";
+    }
+  }
 
 }
 </script>

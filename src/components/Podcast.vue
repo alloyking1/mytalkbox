@@ -22,7 +22,8 @@
                             </div>
                             <br>
                             <div>
-                                <router-link to="/radio" class="btn btn-default">Radio</router-link>
+                                <!-- <router-link to="/radio" class="btn btn-default">Radio</router-link> -->
+                                <button class="btn btn-default" @click="openForm">Radio</button>
                                 <router-link to="/" class="btn btn-default">Home</router-link>
                             </div>
                         </div>
@@ -35,7 +36,7 @@
             <div class="container pt-lg pb-300">
                 <div class="row text-center justify-content-center">
                 <div class="col-lg-10">
-                    <h2 class="display-3 text-white">Most recent</h2>
+                    <h2 class="display-3 text-white">All Podcasts</h2>
                 </div>
                 </div>
             </div>
@@ -49,8 +50,15 @@
 <script>
 import axios from "axios"
 export default {
-    components: {
 
+    methods:{
+        openForm() {
+        document.getElementById("myForm2").style.display = "block";
+        },
+
+        closeForm() {
+        document.getElementById("myForm2").style.display = "none";
+        }
     },
 
     data(){

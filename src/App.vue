@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
+    <!-- <Podcast/> -->
     <Chat/>
     <sound/>
   </div>
@@ -9,10 +10,12 @@
 <script>
 import Chat from './components/Chat.vue';
 import Sound from './components/RadioSound.vue'
+import Podcast from './components/PodcastSound.vue'
 export default {
   components:{
     Chat,
-    Sound
+    Sound,
+    Podcast
   },
 }
 

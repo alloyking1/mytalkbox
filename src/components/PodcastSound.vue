@@ -3,16 +3,14 @@
         <div>
       
             <button class="open-button btn btn-default" @click="openForm()">
-                <!-- <i class="fas fa-microphone-alt fa-1x"></i> -->
-                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt fa-1x"></i>
+                <!-- <i class="fas fa-music"></i> -->
             </button>
-            <div class="chat-popup" id="myForm2">
+            <div class="chat-popup" id="myForm3">
                 <div class="form-container">
-                    <h1>Radio</h1>
+                    <h1>Podcast</h1>
 
-                    <audio controls autoplay="autoplay"><source src="http://66.85.88.174:80/hot108" type="audio/mp3"></audio>
-
-
+                    <p>Coming soon fkljslkfjklsfklsfkjslkfjsklfjklsjdfklsjlkfjsklfjskljkl</p>
 
                     <button type="button" class="btn cancel" @click="closeForm()">
                         <i class="fas fa-times"></i>
@@ -27,18 +25,20 @@
 </template>
 
 <script>
+
 export default {
+    
     mounted(){
         this.closeForm();
     },
 
     methods:{
         openForm() {
-        document.getElementById("myForm2").style.display = "block";
+        document.getElementById("myForm3").style.display = "block";
         },
 
         closeForm() {
-        document.getElementById("myForm2").style.display = "none";
+        document.getElementById("myForm3").style.display = "none";
         }
     }
 }
@@ -53,7 +53,7 @@ export default {
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 95px;
+    bottom: 165px;
     right: 28px;
     border-radius: 50%;
     border: .0625rem solid rgba(0, 0, 0, .05);
